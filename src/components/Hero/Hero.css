@@ -8,7 +8,6 @@
   padding-top: 80px;
 }
 
-/* Background grain texture */
 .hero::before {
   content: '';
   position: absolute;
@@ -30,7 +29,6 @@
   width: 100%;
 }
 
-/* ===== TEXT SIDE ===== */
 .hero-text {
   flex: 1;
   animation: fadeSlideUp 0.8s ease forwards;
@@ -123,18 +121,32 @@
   position: relative;
   width: 320px;
   height: 380px;
-}
+  cursor: pointer;
+  }
 
+/* Avatar hover swap */
 .hero-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   display: block;
-  filter: grayscale(20%);
-  transition: filter 0.3s ease;
+  border-radius: inherit;
+  transition: opacity 0.05s ease, filter 0.05s ease;
 }
 
-.hero-img-wrapper:hover img {
+.avatar-normal {
+  opacity: 1;
+  z-index: 2;
+  filter: grayscale(20%);
+}
+
+.avatar-hover {
+  opacity: 0;
+  z-index: 3;
   filter: grayscale(0%);
 }
 
@@ -203,25 +215,13 @@
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeSlideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes fadeIn {
@@ -230,7 +230,7 @@
 
 @keyframes scrollPulse {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+  50%       { opacity: 0.3; }
 }
 
 /* ===== RESPONSIVE ===== */
