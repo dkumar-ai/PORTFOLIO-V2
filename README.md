@@ -1,13 +1,12 @@
 # Devesh Kumar — AI/ML Engineer Portfolio
 
+[![Live Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://dkumar-ai.github.io/PORTFOLIO-V2/)
+[![GitHub](https://img.shields.io/badge/GitHub-devesh2304-blue)](https://github.com/dkumar-ai)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5)](https://linkedin.com/in/devesh-kd)
+
+
 **Live Portfolio:**  
 https://devesh2304.github.io/My-Portfolio/
-
-**GitHub:**  
-https://github.com/devesh2304  
-
-**LinkedIn:**  
-https://linkedin.com/in/devesh-kd  
 
 ---
 
